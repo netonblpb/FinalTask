@@ -4,13 +4,15 @@
 
 Console.Clear();
 
-string[] startarray = new string[] { "hello", "2", ";-)", "work", "list", "Moscow", "((", "1"};
+string[] startarray = new string[] { "hello", "2", ";-)", "work", "lis", "Moscow", "((", "1" };
 int len = 0;
 
 for (int i = 0; i < startarray.Length; i++)
 {
-    if (startarray[i].Length <= 3) len ++;
+    if (startarray[i].Length <= 3) len++;
 }
+
+ArrayPrint(startarray);
 
 string[] resultarray = new string[len];
 len = 0;
@@ -23,3 +25,14 @@ for (int i = 0; i < startarray.Length; i++)
         len++;
     }
 }
+
+void ArrayPrint(string[] array)
+{
+    Console.WriteLine();
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write("\t" + array[i]);
+    }
+}
+
+ArrayPrint(resultarray);
