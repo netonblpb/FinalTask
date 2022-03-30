@@ -12,8 +12,6 @@ for (int i = 0; i < startarray.Length; i++)
     if (startarray[i].Length <= 3) len++;
 }
 
-ArrayPrint(startarray);
-
 string[] resultarray = new string[len];
 len = 0;
 
@@ -35,4 +33,5 @@ void ArrayPrint(string[] array)
     }
 }
 
+ArrayPrint(startarray);
 ArrayPrint(resultarray);
