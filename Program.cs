@@ -12,3 +12,14 @@ for (int i = 0; i < startarray.Length; i++)
     if (startarray[i].Length <= 3) len ++;
 }
 
+string[] resultarray = new string[len];
+len = 0;
+
+for (int i = 0; i < startarray.Length; i++)
+{
+    if (startarray[i].Length <= 3)
+    {
+        resultarray[len] = startarray[i];
+        len++;
+    }
+}
